@@ -1,0 +1,245 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    position: absolute;
+    align-self: center;
+    top: 25%;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+.header img:nth-of-type(1) {
+    position: absolute;
+    height: 100px;
+    align-self: center;
+}
+
+.header img:nth-of-type(2) {
+    width: 100%;
+    height: 100vh;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.section .box {
+    width: 100%;
+    height: auto;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box .description-content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+}
+
+.description-content h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    color: hsl(212, 27%, 19%);
+}
+
+.description-content p {
+    color: hsl(232, 10%, 55%);
+}
+
+.box .link-section {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    width: 140px;
+    color: hsl(212, 27%, 19%);
+    margin-top: 20px;
+}
+
+.box .link-section:hover {
+    cursor: pointer;
+}
+
+.link-section a:hover~.line-f {
+    background-color: hsl(51, 100%, 49%);
+    transition: 0.3s ease;
+}
+
+.link-section a:hover~.line-s {
+    background-color: hsl(7, 99%, 70%);
+    transition: 0.3s ease;
+}
+
+.link-section .line-f,
+.line-s {
+    position: relative;
+    top: -8px;
+    right: 6px;
+    z-index: -1;
+    border-radius: 8px;
+    height: 10px;
+    background-color: hsla(51, 100%, 49%, 0.4);
+}
+
+.link-section .line-s {
+    background-color: hsla(7, 99%, 70%, 0.4);
+}
+
+.box-s {
+    position: relative;
+}
+
+.image-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.center-image-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    padding-bottom: 40px;
+}
+
+.color-f {
+    color: hsl(167, 40%, 24%);
+}
+
+.color-s {
+    color: hsl(198, 62%, 26%);
+}
+
+.center-image-description h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+}
+
+.pictures-section {
+    widows: 100%;
+    display: flex;
+}
+
+.pictures-section .column {
+    display: flex;
+    flex-direction: row;
+}
+
+.column img {
+    width: 50%;
+}
+
+.client-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.client-section h3 {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color: hsl(210, 4%, 67%);
+    padding-bottom: 40px;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 5px;
+}
+
+.comment-section img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.comment-section p {
+    text-align: center;
+    margin-bottom: 50px;
+    color: hsl(213, 9%, 39%);
+}
+
+.comment-section .nick {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    color: hsl(212, 27%, 19%);
+}
+
+.comment-section .profession {
+    font-size: 0.9rem;
+    color: hsl(210, 4%, 67%);
+}
+
+.client-comments {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (max-width: 880px) {
+    .section {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .description-content {
+        align-items: center;
+        padding: 50px 30px;
+    }
+
+    .wrap-f {
+        flex-wrap: wrap-reverse;
+    }
+
+    .wrap-s {
+        flex-wrap: wrap;
+    }
+
+    .image-description p {
+        padding: 0px 20px;
+    }
+
+    .client-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .client-comments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comment-section {
+        margin-bottom: 60px;
+    }
+
+    .pictures-section {
+        flex-wrap: wrap;
+    }
+}
